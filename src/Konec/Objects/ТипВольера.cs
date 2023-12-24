@@ -12,6 +12,7 @@ namespace IIS.Konec
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,26 +32,31 @@ namespace IIS.Konec
         // *** Start programmer edit section *** (ТипВольера.ДляКрупныхЖивотных CustomAttributes)
 
         // *** End programmer edit section *** (ТипВольера.ДляКрупныхЖивотных CustomAttributes)
+        [Caption("Для крупных животных")]
         ДляКрупныхЖивотных,
+        
+        // *** Start programmer edit section *** (ТипВольера.ДляПтиц CustomAttributes)
+
+        // *** End programmer edit section *** (ТипВольера.ДляПтиц CustomAttributes)
+        [Caption("Для птиц")]
+        ДляПтиц,
         
         // *** Start programmer edit section *** (ТипВольера.Аквариум CustomAttributes)
 
         // *** End programmer edit section *** (ТипВольера.Аквариум CustomAttributes)
+        [Caption("Аквариум")]
         Аквариум,
         
         // *** Start programmer edit section *** (ТипВольера.Терариум CustomAttributes)
 
         // *** End programmer edit section *** (ТипВольера.Терариум CustomAttributes)
+        [Caption("Терариум")]
         Терариум,
         
         // *** Start programmer edit section *** (ТипВольера.Экзотический CustomAttributes)
 
         // *** End programmer edit section *** (ТипВольера.Экзотический CustomAttributes)
+        [Caption("Экзотический")]
         Экзотический,
-        
-        // *** Start programmer edit section *** (ТипВольера.ДляПтиц CustomAttributes)
-
-        // *** End programmer edit section *** (ТипВольера.ДляПтиц CustomAttributes)
-        ДляПтиц,
     }
 }

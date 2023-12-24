@@ -12,6 +12,7 @@ namespace IIS.Konec
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,11 +32,13 @@ namespace IIS.Konec
         // *** Start programmer edit section *** (Пол.Самец CustomAttributes)
 
         // *** End programmer edit section *** (Пол.Самец CustomAttributes)
+        [Caption("Самец")]
         Самец,
         
         // *** Start programmer edit section *** (Пол.Самка CustomAttributes)
 
         // *** End programmer edit section *** (Пол.Самка CustomAttributes)
+        [Caption("Самка")]
         Самка,
     }
 }

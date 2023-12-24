@@ -7,7 +7,7 @@ CREATE TABLE Вольер (
  primaryKey UUID NOT NULL,
  Номер INT NULL,
  Площадь VARCHAR(255) NULL,
- ТипВольера VARCHAR(18) NULL,
+ ТипВольера VARCHAR(20) NULL,
  PRIMARY KEY (primaryKey));
 
 

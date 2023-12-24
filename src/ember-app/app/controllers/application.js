@@ -32,13 +32,13 @@ export default Controller.extend({
               link: 'i-i-s-konec-виды-l',
               caption: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.учет-животных.i-i-s-konec-виды-l.caption'),
               title: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.учет-животных.i-i-s-konec-виды-l.title'),
-              icon: 'phone',
+              icon: 'building',
               children: null
             }, {
               link: 'i-i-s-konec-животные-l',
               caption: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.учет-животных.i-i-s-konec-животные-l.caption'),
               title: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.учет-животных.i-i-s-konec-животные-l.title'),
-              icon: 'archive',
+              icon: 'chart line',
               children: null
             }]
           }, {
@@ -49,13 +49,13 @@ export default Controller.extend({
               link: 'i-i-s-konec-сотрудники-l',
               caption: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.штат.i-i-s-konec-сотрудники-l.caption'),
               title: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.штат.i-i-s-konec-сотрудники-l.title'),
-              icon: 'chart bar',
+              icon: 'calendar',
               children: null
             }, {
               link: 'i-i-s-konec-должность-l',
               caption: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.штат.i-i-s-konec-должность-l.caption'),
               title: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.штат.i-i-s-konec-должность-l.title'),
-              icon: 'building',
+              icon: 'edit',
               children: null
             }]
           }, {
@@ -66,13 +66,13 @@ export default Controller.extend({
               link: 'i-i-s-konec-уборка-l',
               caption: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.вольеры.i-i-s-konec-уборка-l.caption'),
               title: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.вольеры.i-i-s-konec-уборка-l.title'),
-              icon: 'folder',
+              icon: 'list',
               children: null
             }, {
               link: 'i-i-s-konec-вольер-l',
               caption: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.вольеры.i-i-s-konec-вольер-l.caption'),
               title: i18n.t('forms.application.sitemap.з-о-о-п-а-р-к.вольеры.i-i-s-konec-вольер-l.title'),
-              icon: 'suitcase',
+              icon: 'list',
               children: null
             }]
           }]
