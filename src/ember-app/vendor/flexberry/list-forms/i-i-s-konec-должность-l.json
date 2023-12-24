@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-konec-должность-e",
+  "editForm": "i-i-s-konec-должность-e",
+  "external": false,
+  "caption": "Должность",
+  "name": "IISKonecДолжностьL",
+  "className": "ДолжностьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-должность",
+      "modelProjection": "ДолжностьL"
+    }
+  ]
+}

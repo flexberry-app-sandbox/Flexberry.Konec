@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-konec-животные-e",
+  "editForm": "i-i-s-konec-животные-e",
+  "external": false,
+  "caption": "Животные",
+  "name": "IISKonecЖивотныеL",
+  "className": "ЖивотныеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-животные",
+      "modelProjection": "ЖивотныеL"
+    }
+  ]
+}

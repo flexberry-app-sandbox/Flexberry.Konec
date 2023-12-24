@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISKonecСоставВольера",
+  "modelName": "i-i-s-konec-состав-вольера",
+  "className": "СоставВольера",
+  "nameSpace": "IIS.Konec",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "животные",
+      "relatedTo": "i-i-s-konec-животные",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "вольер",
+      "relatedTo": "i-i-s-konec-вольер",
+      "inverse": "составВольера"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СоставВольераE",
+      "modelName": "i-i-s-konec-состав-вольера",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Кличка",
+          "lookupValueField": "кличка",
+          "relationName": "Животные",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "кличка",
+              "caption": "Кличка",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Животные",
+          "name": "животные",
+          "relatedTo": "i-i-s-konec-животные",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

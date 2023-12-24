@@ -1,0 +1,75 @@
+<h3 class="ui header">{{t "forms.i-i-s-konec-животные-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кодЖивотного
+      class=(if (v-get validationModel "кодЖивотного" "isInvalid") "error")
+      label=(t "forms.i-i-s-konec-животные-e.кодЖивотного-caption")
+      data-test-i-i-s-konec-животные-e-кодЖивотного=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кодЖивотного" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кличка
+      class=(if (v-get validationModel "кличка" "isInvalid") "error")
+      label=(t "forms.i-i-s-konec-животные-e.кличка-caption")
+      data-test-i-i-s-konec-животные-e-кличка=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кличка" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-konec-животные-e-пол="true">
+    <label>{{t "forms.i-i-s-konec-животные-e.пол-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-konec-пол")
+      value=model.пол
+      class=(if (v-get validationModel "пол" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пол" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-konec-животные-e.виды-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.виды
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="виды"
+      projection="ВидыL"
+      title=(t "forms.i-i-s-konec-животные-e.виды-caption")
+      readonly=readonly
+      componentName="видыLookup"
+      class=(if (v-get validationModel "виды" "isInvalid") "error")
+      data-test-i-i-s-konec-животные-e-виды=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "виды" "message")}}
+  </div>
+</form>

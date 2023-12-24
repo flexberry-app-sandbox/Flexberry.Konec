@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-konec-вольер-e",
+  "editForm": "i-i-s-konec-вольер-e",
+  "external": false,
+  "caption": "Вольер",
+  "name": "IISKonecВольерL",
+  "className": "ВольерL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-вольер",
+      "modelProjection": "ВольерL"
+    }
+  ]
+}

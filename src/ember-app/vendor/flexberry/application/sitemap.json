@@ -1,0 +1,81 @@
+﻿{
+  "applicationCaption": "Konec",
+  "applicationTitle": "Konec",
+  "items": [
+    {
+      "link": null,
+      "menuName": "з-о-о-п-а-р-к",
+      "caption": "ЗООПАРК",
+      "title": "ЗООПАРК",
+      "children": [
+        {
+          "link": null,
+          "menuName": "учет-животных",
+          "caption": "Учет животных",
+          "title": "Учет животных",
+          "children": [
+            {
+              "link": "i-i-s-konec-виды-l",
+              "menuName": null,
+              "caption": "Виды",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-konec-животные-l",
+              "menuName": null,
+              "caption": "Животные",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "штат",
+          "caption": "Штат",
+          "title": "Штат",
+          "children": [
+            {
+              "link": "i-i-s-konec-сотрудники-l",
+              "menuName": null,
+              "caption": "Сотрудники",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-konec-должность-l",
+              "menuName": null,
+              "caption": "Должность",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "вольеры",
+          "caption": "Вольеры",
+          "title": "Вольеры",
+          "children": [
+            {
+              "link": "i-i-s-konec-уборка-l",
+              "menuName": null,
+              "caption": "Уборка",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-konec-вольер-l",
+              "menuName": null,
+              "caption": "Вольер",
+              "title": "",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

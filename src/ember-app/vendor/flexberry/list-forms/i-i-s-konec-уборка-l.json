@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-konec-уборка-e",
+  "editForm": "i-i-s-konec-уборка-e",
+  "external": false,
+  "caption": "Уборка",
+  "name": "IISKonecУборкаL",
+  "className": "УборкаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-уборка",
+      "modelProjection": "УборкаL"
+    }
+  ]
+}

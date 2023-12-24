@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-konec-сотрудники-e",
+  "editForm": "i-i-s-konec-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISKonecСотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

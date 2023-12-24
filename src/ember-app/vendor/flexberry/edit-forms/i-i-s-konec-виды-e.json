@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Виды",
+  "name": "IISKonecВидыE",
+  "className": "ВидыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-виды",
+      "modelProjection": "ВидыE"
+    }
+  ]
+}

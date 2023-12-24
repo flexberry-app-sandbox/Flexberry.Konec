@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-konec-виды-e",
+  "editForm": "i-i-s-konec-виды-e",
+  "external": false,
+  "caption": "Виды",
+  "name": "IISKonecВидыL",
+  "className": "ВидыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-виды",
+      "modelProjection": "ВидыL"
+    }
+  ]
+}

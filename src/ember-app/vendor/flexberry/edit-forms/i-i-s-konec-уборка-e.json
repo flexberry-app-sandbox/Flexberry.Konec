@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Должность",
+      "projection": "ДолжностьL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Вольер",
+      "projection": "ВольерL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Уборка",
+  "name": "IISKonecУборкаE",
+  "className": "УборкаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-уборка",
+      "modelProjection": "УборкаE"
+    }
+  ]
+}

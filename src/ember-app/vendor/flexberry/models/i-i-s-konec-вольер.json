@@ -1,0 +1,110 @@
+﻿{
+  "name": "IISKonecВольер",
+  "modelName": "i-i-s-konec-вольер",
+  "className": "Вольер",
+  "nameSpace": "IIS.Konec",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "площадь",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типВольера",
+      "type": "i-i-s-konec-тип-вольера",
+      "flexberryType": "ТипВольера",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "составВольера",
+      "relatedTo": "i-i-s-konec-состав-вольера",
+      "inverse": "вольер"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ВольерE",
+      "modelName": "i-i-s-konec-вольер",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типВольера",
+          "caption": "Тип вольера",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "площадь",
+          "caption": "Площадь",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "СоставВольераE",
+          "caption": "Состав вольера",
+          "name": "составВольера",
+          "relatedTo": "i-i-s-konec-состав-вольера",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ВольерL",
+      "modelName": "i-i-s-konec-вольер",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типВольера",
+          "caption": "Тип вольера",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "площадь",
+          "caption": "Площадь",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

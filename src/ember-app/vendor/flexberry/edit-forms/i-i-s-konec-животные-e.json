@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Виды",
+      "projection": "ВидыL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Животные",
+  "name": "IISKonecЖивотныеE",
+  "className": "ЖивотныеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konec-животные",
+      "modelProjection": "ЖивотныеE"
+    }
+  ]
+}

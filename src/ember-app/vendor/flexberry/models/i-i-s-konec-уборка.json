@@ -1,0 +1,176 @@
+﻿{
+  "name": "IISKonecУборка",
+  "modelName": "i-i-s-konec-уборка",
+  "className": "Уборка",
+  "nameSpace": "IIS.Konec",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяУборки",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "деньУборки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "вольер",
+      "relatedTo": "i-i-s-konec-вольер",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должность",
+      "relatedTo": "i-i-s-konec-должность",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УборкаE",
+      "modelName": "i-i-s-konec-уборка",
+      "attrs": [
+        {
+          "name": "деньУборки",
+          "caption": "День уборки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "времяУборки",
+          "caption": "Время уборки",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Ответственный",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Должность",
+          "name": "должность",
+          "relatedTo": "i-i-s-konec-должность",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Площадь",
+          "lookupValueField": "площадь",
+          "relationName": "Вольер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер вольера",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Вольер",
+          "name": "вольер",
+          "relatedTo": "i-i-s-konec-вольер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "УборкаL",
+      "modelName": "i-i-s-konec-уборка",
+      "attrs": [
+        {
+          "name": "деньУборки",
+          "caption": "День уборки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "времяУборки",
+          "caption": "Время уборки",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ответственный",
+          "name": "должность",
+          "relatedTo": "i-i-s-konec-должность",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Вольер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер вольера",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер вольера",
+          "name": "вольер",
+          "relatedTo": "i-i-s-konec-вольер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

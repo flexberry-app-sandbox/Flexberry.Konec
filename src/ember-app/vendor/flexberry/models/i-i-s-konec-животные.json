@@ -1,0 +1,148 @@
+﻿{
+  "name": "IISKonecЖивотные",
+  "modelName": "i-i-s-konec-животные",
+  "className": "Животные",
+  "nameSpace": "IIS.Konec",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кличка",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодЖивотного",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "пол",
+      "type": "i-i-s-konec-пол",
+      "flexberryType": "Пол",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "виды",
+      "relatedTo": "i-i-s-konec-виды",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЖивотныеE",
+      "modelName": "i-i-s-konec-животные",
+      "attrs": [
+        {
+          "name": "кодЖивотного",
+          "caption": "Код животного",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "кличка",
+          "caption": "Кличка",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "пол",
+          "caption": "Пол",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Виды",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование вида",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Виды",
+          "name": "виды",
+          "relatedTo": "i-i-s-konec-виды",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЖивотныеL",
+      "modelName": "i-i-s-konec-животные",
+      "attrs": [
+        {
+          "name": "кодЖивотного",
+          "caption": "Код животного",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "кличка",
+          "caption": "Кличка",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "пол",
+          "caption": "Пол",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Виды",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование вида",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование вида",
+          "name": "виды",
+          "relatedTo": "i-i-s-konec-виды",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
